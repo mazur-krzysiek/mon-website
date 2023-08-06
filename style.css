@@ -1,4 +1,5 @@
 :root {
+  /* Colors */
   --clr-primary-black-700: hsla(18, 18%, 11%, 1);
   --clr-primary-black-500: hsla(15, 6%, 28%, 1);
   --clr-primary-black-400: hsla(17, 3%, 45%, 1);
@@ -17,11 +18,13 @@
   --clr-accent-brown-300: hsla(19, 12%, 74%, 1);
   --clr-accent-brown-200: hsla(18, 18%, 86%, 1);
 
+  /* Font family */
   --ff-primary: 'Jost', sans-serif;
   
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
 
+  /* Font weight */
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
@@ -75,7 +78,7 @@
   }
 }
 
-
+/* RESET */
 // https://piccalil.li/blog/a-modern-css-reset
 
 /* Box sizing rules */
@@ -130,7 +133,7 @@ svg {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+  scroll-behavior: auto;
   }
   
   *,
@@ -141,4 +144,154 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/** Utility classes **/
+/* Text color */
+.text-primary-black-700 {
+  color: var(--clr-primary-black-700);
+}
+.text-primary-black-500 {
+color: var(--clr-primary-black-500);
+}
+.text-primary-black-400 {
+  color: var(--clr-primary-black-400);
+}
+.text-primary-black-300 {
+  color: var(--clr-primary-black-300);
+}
+.text-secondary-cafe-700 {
+  color: var(--clr-secondary-cafe-700);
+}
+.text-secondary-cafe-500 {
+color: var(--clr-secondary-cafe-500);
+}
+.text-secondary-cafe-400 {
+  color: var(--clr-secondary-cafe-400);
+}
+.text-secondary-cafe-300 {
+  color: var(--clr-secondary-cafe-300);
+}
+.text-secondary-cafe-200 {
+  color: var(--clr-secondary-cafe-200);
+}
+.text-secondary-cafe-100 {
+  color: var(--clr-secondary-cafe-100);
+}
+.text-accent-brown-700 {
+  color: var(--clr-accent-brown-700);
+}
+.text-accent-brown-500 {
+color: var(--clr-accent-brown-500);
+}
+.text-accent-brown-400 {
+  color: var(--clr-accent-brown-400);
+}
+.text-accent-brown-300 {
+  color: var(--clr-accent-brown-300);
+}
+.text-accent-brown-200 {
+  color: var(--clr-accent-brown-200);
+}
+/* Body color */
+.bg-primary-black-700 {
+    background-color: var(--clr-primary-black-700);
+}
+.bg-primary-black-500 {
+  background-color: var(--clr-primary-black-500);
+}
+.bg-primary-black-400 {
+    background-color: var(--clr-primary-black-400);
+}
+.bg-primary-black-300 {
+    background-color: var(--clr-primary-black-300);
+}
+.bg-secondary-cafe-700 {
+    background-color: var(--clr-secondary-cafe-700);
+}
+.bg-secondary-cafe-500 {
+  background-color: var(--clr-secondary-cafe-500);
+}
+.bg-secondary-cafe-400 {
+    background-color: var(--clr-secondary-cafe-400);
+}
+.bg-secondary-cafe-300 {
+    background-color: var(--clr-secondary-cafe-300);
+}
+.bg-secondary-cafe-200 {
+    background-color: var(--clr-secondary-cafe-200);
+}
+.bg-secondary-cafe-100 {
+    background-color: var(--clr-secondary-cafe-100);
+}
+.bg-accent-brown-700 {
+    background-color: var(--clr-accent-brown-700);
+}
+.bg-accent-brown-500 {
+  background-color: var(--clr-accent-brown-500);
+}
+.bg-accent-brown-400 {
+    background-color: var(--clr-accent-brown-400);
+}
+.bg-accent-brown-300 {
+    background-color: var(--clr-accent-brown-300);
+}
+.bg-accent-brown-200 {
+    background-color: var(--clr-accent-brown-200);
+}
+
+/* Font weight */
+.fw-light {
+  font-weight: var(--fw-light);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+/* Font size */ 
+.fs-body {
+  font-size: var(--fs-body);
+}
+.fs-nav {
+  font-size: var(--fs-nav);
+}
+.fs-btn-primary {
+  font-size: var(--fs-btn-primary);
+}
+.fs-btn-secondary {
+  font-size: var(--fs-btn-secondary);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.fs-1000 {
+  font-size: var(--fs-1000);
+}
+.fs-1100 {
+  font-size: var(--fs-1100);
 }
