@@ -1,12 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello wordl!
-    <h1>First chapter</h1>
-</body>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-primary bg-secondary-cafe-100">
+      <div class="container">
+        <a href="#"
+          ><img
+            src="/images/LOGO-mieszkanieodnowa.svg"
+            alt="Mieszkanie od nowa"
+        /></a>
+        <nav class="navigation-primary">
+          <ul role="list" class="nav-list">
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">o mnie</a></li>
+            <li><a href="#">oferta</a></li>
+            <li><a href="#">blog</a></li>
+          </ul>
+        </nav>
+        <button class="button">KONTAKT</button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="hero">
+          <h1 class="fs-800 fw-medium text-secondary-cafe-100">Stwórzmy razem Twoje wnętrze</h1>
+          <button class="button button-secondary" data-type="inverted">
+            ZOBACZ PROJEKTY
+          </button>
+          <img
+            src="/images/home/Projekt-kuchni.svg"
+            alt="Wizualizacja projektu kuchni"
+          />
+        </div>
+      </section>
+
+      <section class="bg-secondary-cafe-200 text-primary-black-100">
+        <div class="one-column">
+          <h1 class="fs-1100 fw-regular">ANNA BAJNO</h1>
+        </div>
+      </section>
+
+      <section class="bg-secondary-cafe-200 text-primary-black-500">
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <p>
+                Przestrzeń jest dla mnie fascynująca, bo daje nieograniczoną
+                liczbę możliwości.
+              </p>
+              <p>
+                Znalezienie takiego układu, który najlepiej pasuje do
+                właściciela i jego potrzeb daje ogrom satysfakcji.
+              </p>
+              <button class="button button-secondary">WIĘCEJ O MNIE</button>
+            </div>
+            <div>
+              <img src="/images/Home/Anna-Bajno.svg" alt="Anna Bajno" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-carousel bg-secondary-cafe-100 text-primary-black-500">
+        <div>
+          <h3><div class="fs-600 fw-medium">Ostatnie projekty</div></h3>
+          <button class="button">ZOBACZ WSZYSTKIE</button>
+        </div>
+        <div>
+          <!-- Carousel here -->
+        </div>
+      </section>
+
+      <section class="bg-accent-brown-700 text-secondary-cafe-100">
+        <div class="container">
+          <div class="even-columns">
+            <h2 class="fs-700 fw-medium">
+              Potrzebujesz kompleksowej pomocy przy remoncie, a może
+              pojednynczej wizualizacji?
+            </h2>
+            <p class="fs-300 fw-regular">
+              Wybierz spośród trzech pakietów lub zapytaj o indywidualną wycenę.
+            </p>
+          </div>
+          <div>
+            <button class="button button-primary" data-type="inverted">
+              SPRAWDŹ OFERTĘ
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-carousel bg-secondary-cafe-100 text-primary-black-500">
+        <div>
+          <h3 class="fs-600 fw-medium">Ostatnie wpisy na blogu</h3>
+          <button class="button button-secondary">WSZYSTKIE WPISY</button>
+        </div>
+        <div>
+          <!-- Carousel here -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-secondary-cafe-300 text-primary-black-500">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <nav class="footer-nav">
+              <h5 class="fs-400 fw-medium">Nawigacja</h5>
+              <ul aria-label="footer" role="list">
+                <li><a href="/index.html">Strona główna</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/o-mnie.html">O mnie</a></li>
+                <li><a href="/oferta.html">Oferta</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/kontakt.html">Kontakt</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h5 class="fs-400 fw-medium">Kontakt</h5>
+            <p class="fs-200 fw-regular">+48 669 518 402</p>
+            <p class="fs-200 fw-regular">kontakt@mieszkanieodnowa.com</p>
+            <p class="fs-200 fw-regular">Formularz kontaktowy</p>
+            <ul role="list" aria-label="social-links">
+              <li><a aria-label="facebook" href="https://www.facebook.com/people/Mieszkanie-od-nowa/100087184020057/"></a></li>
+              <li><a aria-label="instagram" href="https://www.instagram.com/mieszkanie.od.nowa/"></a></li>
+            </ul>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="/images/LOGO-mieszkanieodnowa.svg"
+                alt="Mieszkanie od nowa"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2023 Mieszkanie od nowa. All rights reserved.</p>
+          <button class="button button-secondary">powrót do góry</button>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
