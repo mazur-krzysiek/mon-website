@@ -147,7 +147,7 @@ svg {
   }
 }
 
-/** Utility classes **/
+/* Utility classes */
 /* Text color */
 .text-primary-black-700 {
   color: var(--clr-primary-black-700);
@@ -307,4 +307,15 @@ svg {
 }
 .fs-1100 {
   font-size: var(--fs-1100);
+}
+
+.container {
+  --max-width: 70.625rem ;
+  --padding: 1rem;
+}
+/* General styling */
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  color: var(--clr-primary-black-500);
 }
