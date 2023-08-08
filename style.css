@@ -312,7 +312,22 @@ svg {
 .container {
   --max-width: 70.625rem ;
   --padding: 1rem;
+
+  width: min(var(--max-width), 100% - var(--padding));
+  margin-inline: auto;
 }
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+  }
+}
+
 /* General styling */
 body {
   font-size: var(--fs-body);
