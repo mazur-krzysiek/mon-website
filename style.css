@@ -46,6 +46,7 @@
   /* Displays font sizes*/
   --fs-900: 3.8125rem; /*Display-01*/
 
+  /* Font styles*/
   --fs-body: var(--fs-300);
   --fs-nav: var(--fs-300);
   --fs-btn-primary: var(--fs-300);
@@ -351,9 +352,38 @@ svg {
 }
 
 /* General styling */
+
 body {
   font-size: var(--fs-body);
   line-height: 1.5;
   font-family: var(--ff-body);
   color: var(--clr-primary-black-500);
 }
+
+/* Buttons */
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0vmax;
+  border: 0;
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+}
+
+.button-secondary {
+  padding: 0.69em 1.88em 0.63em;
+  background: var(--clr-primary-black-500);
+  color: var(--clr-secondary-cafe-100);
+  font-size: var(--fs-btn-secondary);
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible {
+  background: var(--clr-secondary-cafe-100);
+  color: var(--clr-primary-black-500);
+  border: 0.06em solid var(--black-black-500, #4c4644);
+  padding: 0.63em 1.82em 0.57em;
+}
+
+25: 30;
