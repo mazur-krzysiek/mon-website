@@ -49,7 +49,7 @@
   /* Font styles*/
   --fs-body: var(--fs-300);
   --fs-nav: var(--fs-300);
-  --fs-btn-primary: var(--fs-300);
+  --fs-btn-primary: var(--fs-200);
   --fs-btn-secondary: var(--fs-200);
 
   /* Padding sizes*/
@@ -82,7 +82,7 @@
 
     /* Additional font sizes */
     --fs-nav: var(--fs-200);
-    --fs-btn-primary: var(--fs-400);
+    --fs-btn-primary: var(--fs-300);
     --fs-btn-secondary: var(--fs-300);
   }
 }
@@ -155,6 +155,19 @@ svg {
 }
 
 /* Utility classes */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
 /* Text color */
 .text-primary-black-700 {
   color: var(--clr-primary-black-700);
@@ -371,6 +384,19 @@ body {
   text-transform: uppercase;
 }
 
+.button-primary {
+  padding: 0.05em 0.1em 0.05em;
+  background: none;
+  color: var(--clr-primary-black-500);
+  border-bottom: solid 0.06em;
+  font-size: var(--fs-btn-primary);
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  /* here animation of border bottom */
+}
+
 .button-secondary {
   padding: 0.69em 1.88em 0.63em;
   background: var(--clr-primary-black-500);
@@ -380,10 +406,35 @@ body {
 
 .button-secondary:hover,
 .button-secondary:focus-visible {
-  background: var(--clr-secondary-cafe-100);
-  color: var(--clr-primary-black-500);
-  border: 0.06em solid var(--black-black-500, #4c4644);
-  padding: 0.63em 1.82em 0.57em;
+  background: var(--clr-primary-black-400);
 }
 
-25: 30;
+.button-secondary[data-type="inverted"] {
+  color: var(--clr-primary-black-500);
+  background-color: var(--clr-secondary-cafe-100);
+}
+
+.button-secondary[data-type="inverted"]:hover,
+.button-secondary[data-type="inverted"]:focus-visible {
+  color: var(--clr-primary-black-500);
+  background-color: var(--clr-secondary-cafe-300);
+}
+
+/* navigation */
+
+.header-primary {
+  padding-top: var(--size-700);
+}
+
+.mobile-nav-toggle {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0.5em;
+}
+
+.mobile-nav-toggle .icon-close-medium-dark {
+  display: none;
+}
+
+/* Part 4 Navigation: 9:16 */
