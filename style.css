@@ -392,6 +392,10 @@ body {
   font-size: var(--fs-btn-primary);
 }
 
+.button-primary[data-type="inverted"] {
+  color: var(--clr-secondary-cafe-100);
+}
+
 .button-primary:hover,
 .button-primary:focus-visible {
   /* here animation of border bottom */
@@ -426,6 +430,12 @@ body {
   padding-top: var(--size-700);
 }
 
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .mobile-nav-toggle {
   cursor: pointer;
   background: transparent;
@@ -437,4 +447,19 @@ body {
   display: none;
 }
 
-/* Part 4 Navigation: 9:16 */
+/* hero */
+
+.hero {
+  height: 640px;
+  background-image: url("/images/home/Projekt-kuchni.svg");
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: var(--size-300);
+}
+
+/* Part 4 Navigation: 11:45 */
