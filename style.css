@@ -421,6 +421,27 @@ body {
 @media (max-width: 50em) {
   .navigation-primary {
     display: none;
+
+    position: fixed;
+    inset: 5.5rem 0 auto;
+    background-color: var(--clr-secondary-cafe-100);
+    gap: var(--size-600);
+  }
+
+  .nav-list {
+    display: grid;
+    gap: var(--size-300);
+    text-align: center;
+    padding: var(--size-300);
+  }
+
+  .nav-list a {
+    color: var(--clr-primary-black-500);
+    text-decoration: none;
+  }
+
+  .navigation-primary[data-visible] {
+    display: block;
   }
 
   .mobile-nav-toggle {
@@ -434,11 +455,6 @@ body {
   .mobile-nav-toggle .icon-close-medium-dark {
     display: none;
   }
-}
-
-.opened {
-  display: block;
-  position: fixed;
 }
 
 /* hero */
