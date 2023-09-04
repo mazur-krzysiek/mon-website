@@ -418,11 +418,15 @@ body {
   display: none;
 }
 
+.nav-list {
+  font-size: var(--fs-nav);
+}
+
 @media (max-width: 50em) {
   .navigation-primary {
     display: none;
 
-    position: fixed;
+    position: absolute;
     inset: 5.5rem 0 auto;
     background-color: var(--clr-secondary-cafe-100);
     gap: var(--size-600);
@@ -432,12 +436,19 @@ body {
     display: grid;
     gap: var(--size-300);
     text-align: center;
-    padding: var(--size-300);
+    padding: var(--size-500);
+    font-weight: var(--fw-regular);
   }
 
   .nav-list a {
-    color: var(--clr-primary-black-500);
     text-decoration: none;
+    color: var(--clr-primary-black-500);
+  }
+
+  .nav-list a:hover,
+  .nav-list a:focus {
+    text-decoration: none;
+    color: var(--clr-accent-brown-400);
   }
 
   .navigation-primary[data-visible] {
