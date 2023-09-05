@@ -353,6 +353,7 @@ body {
 
 /* Buttons */
 .button {
+  display: inline-flex;
   cursor: pointer;
   text-decoration: none;
   border-radius: 0vmax;
@@ -376,6 +377,7 @@ body {
 
 .button-primary:hover,
 .button-primary:focus-visible {
+  color: var(--clr-accent-brown-400);
   /* here animation of border bottom */
 }
 
@@ -388,7 +390,7 @@ body {
 
 .button-secondary:hover,
 .button-secondary:focus-visible {
-  background: var(--clr-primary-black-400);
+  background: var(--clr-accent-brown-400);
 }
 
 .button-secondary[data-type="inverted"] {
@@ -405,7 +407,10 @@ body {
 /* navigation */
 
 .header-primary {
-  padding-top: var(--size-700);
+  padding: var(--size-300) 0;
+  content: "";
+  position: sticky;
+  inset: 0;
 }
 
 .nav-wrapper {
@@ -419,7 +424,23 @@ body {
 }
 
 .nav-list {
-  font-size: var(--fs-nav);
+  display: flex;
+  font-size: var(--fs-300);
+  gap: var(--size-900);
+  align-items: center;
+  padding: var(--size-500);
+  font-weight: var(--fw-regular);
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--clr-primary-black-500);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  text-decoration: none;
+  color: var(--clr-accent-brown-400);
 }
 
 @media (max-width: 50em) {
@@ -427,13 +448,20 @@ body {
     display: none;
 
     position: absolute;
-    inset: 5.5rem 0 auto;
+    inset: 4.5rem 0 auto;
     background-color: var(--clr-secondary-cafe-100);
     gap: var(--size-600);
   }
 
+  .header-primary[data-overlay] {
+    content: "";
+    position: sticky;
+    inset: 0;
+  }
+
   .nav-list {
     display: grid;
+    font-size: var(--fs-nav);
     gap: var(--size-300);
     text-align: center;
     padding: var(--size-500);
