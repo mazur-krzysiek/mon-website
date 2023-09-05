@@ -475,7 +475,6 @@ body {
     inset: 4.5rem 0 auto;
     background-color: var(--clr-secondary-cafe-100);
     gap: var(--size-600);
-    
   }
 
   .header-primary[data-overlay] {
@@ -537,5 +536,3 @@ body {
 }
 
 /* main */
-
-
