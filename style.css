@@ -184,6 +184,7 @@ svg {
   display: grid;
   gap: 1rem;
   align-items: center;
+  padding-top: var(--size-400);
 }
 
 @media (min-width: 50em) {
@@ -198,12 +199,18 @@ svg {
 
 .one-column h1 {
   font-size: 16vw;
+  line-height: 80%;
 }
 
 @media (min-width: 50em) {
   .one-column h1 {
     font-size: 16vw;
   }
+}
+
+.side-image {
+  display: grid;
+  place-items: center;
 }
 
 /* Text color */
