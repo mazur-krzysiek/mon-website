@@ -192,6 +192,20 @@ svg {
   }
 }
 
+.one-column {
+  text-align: center;
+}
+
+.one-column h1 {
+  font-size: 16vw;
+}
+
+@media (min-width: 50em) {
+  .one-column h1 {
+    font-size: 16vw;
+  }
+}
+
 /* Text color */
 .text-primary-black-700 {
   color: var(--clr-primary-black-700);
