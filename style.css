@@ -427,7 +427,7 @@ body {
 }
 
 .button-secondary {
-  padding: 0.69em 1.88em 0.63em;
+  padding: 0.44em 1.25em 0.38em;
   background: var(--clr-primary-black-500);
   color: var(--clr-secondary-cafe-100);
   font-size: var(--fs-btn-secondary);
